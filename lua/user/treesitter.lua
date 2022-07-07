@@ -26,3 +26,6 @@ configs.setup {
     enable_autocmd = false,
   },
 }
+
+local ft_to_parser = require"nvim-treesitter.parsers".filetype_to_parsername
+ft_to_parser.cls = "java"

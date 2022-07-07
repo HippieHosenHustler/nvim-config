@@ -59,9 +59,8 @@ return packer.startup(function(use)
   use "xiyaowong/nvim-transparent"
 
   -- Airline
-  use "vim-airline/vim-airline"
-  use "vim-airline/vim-airline-themes"
-
+  use "nvim-lualine/lualine.nvim"
+  
   -- code completion
   use "hrsh7th/nvim-cmp" -- the completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

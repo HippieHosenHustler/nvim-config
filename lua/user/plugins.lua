@@ -60,7 +60,7 @@ return packer.startup(function(use)
 
   -- Airline
   use "nvim-lualine/lualine.nvim"
-  
+
   -- code completion
   use "hrsh7th/nvim-cmp" -- the completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -81,7 +81,7 @@ return packer.startup(function(use)
   -- telescope
   use {
     "nvim-telescope/telescope.nvim",
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- Treesitter
@@ -89,11 +89,21 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "nvim-treesitter/playground"
   use "p00f/nvim-ts-rainbow" -- colorful brackets
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- vimforce
+  use "neowit/vim-force.com"
+
+  use {
+    "folke/which-key.nvim",
+  }
+
+  use "kdheepak/lazygit.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
@@ -101,4 +111,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-

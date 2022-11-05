@@ -10,6 +10,7 @@ wk.register({
   e = { "<cmd>NvimTreeToggle<cr>", "Open File Tree" },
   f = { "<cmd>Telescope find_files<cr>", "File Search" },
   s = { "<cmd>Telescope live_grep<cr>", "Fulltext Search" },
+  h = { "<cmd>noh<cr>", "Hide Highlights" },
   g = {
     name = "Git",
     g = { "<cmd>LazyGit<cr>", "Open Lazygit" },
